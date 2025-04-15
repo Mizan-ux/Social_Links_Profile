@@ -48,9 +48,6 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 - Frontend Mentor - [@Mizan-ux](https://www.frontendmentor.io/profile/Mizan-ux)
 - Twitter(X) - [@MijanMulani](https://www.linkedin.com/in/mijan-mulani-24a00630b/)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
+- Linkedin - [@MijanMulani](https://www.linkedin.com/in/mijan-mulani-24a00630b)
 
 
