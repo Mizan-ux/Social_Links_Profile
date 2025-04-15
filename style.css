@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+main {
+    /* background: linear-gradient(135deg, hsl(0, 0%, 8%) 0%, hsl(0, 0%, 15%) 100%); */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+.card {
+    /* border: 2px solid hsl(75, 94%, 57%); */
+    background-color: hsl(0, 0%, 12%);
+    height: auto;
+    /* width: 90%; */
+    max-width: 540px;
+    /* max limit for big screen */
+    min-width: 280px;
+    display: grid;
+    grid-template-rows: 10rem 1fr 3fr;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+}
+
+.card:hover {
+    background-color: hsl(0, 0%, 24%);
+    color: hsl(0, 0%, 0%);
+    transition: all 0.3s ease-in-out;
+    font-weight: 900;
+}
+
+.card:hover .section1 img {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+
+
+    img {
+        height: 10rem;
+        padding: 2rem;
+        border-radius: 87rem;
+        object-fit: cover;
+    }
+}
+
+.section2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 5px;
+    gap: 0.7rem;
+    margin: 1rem;
+    text-align: center;
+
+    h1 {
+        font-weight: 900;
+        color: hsl(0, 0%, 80%);
+    }
+
+    h4 {
+        font-weight: 800;
+        color: hsl(75, 94%, 57%);
+    }
+
+    p {
+        font-weight: 700;
+        color: hsl(0, 0%, 80%);
+    }
+}
+
+.section3 {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 1.5rem;
+    /* background-color: antiquewhite; */
+    margin: 1rem;
+
+
+}
+
+.section3 a.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 80%);
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    font-weight: 600;
+}
+
+.section3 a.item:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 0%);
+    font-weight: 900;
+    transition: all 0.3s ease-in-out;
+}
+
+.section3 a.item:focus {
+    outline: 2px solid hsl(75, 94%, 57%);
+    outline-offset: 4px;
+}
+
+.section3 a.item:focus-visible {
+    outline: 2px dashed hsl(75, 94%, 57%);
+    outline-offset: 4px;
+}
+
+
+.item:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 0%);
+    transition: all 0.3s ease-in-out;
+    font-weight: 900;
+
+    a {
+        color: hsl(0, 0%, 0%);
+    }
+}
+
+a {
+    color: hsl(0, 0%, 80%);
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px) {
+    .card {
+        grid-template-rows: 12rem 1fr 3fr;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        max-width: 450px;
+    }
+}
+
+@media(min-width:450px) {
+    .card {
+        max-width: 400px;
+
+        width: 90%;
+        height: auto;
+    }
+}
